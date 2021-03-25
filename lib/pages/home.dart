@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
     dataReceived = dataReceived.isEmpty? ModalRoute.of(context).settings.arguments : dataReceived;
 
     String bgImage = dataReceived['isDay'] ? 'day.jpg' : 'night.png';
-    Color bgColor = dataReceived['isDay'] ? Colors.blue : Colors.indigo[700];
+    Color bgColor = dataReceived['isDay'] ? Colors.black : Colors.black;
     double textSize = 70.0;
     if('The API is gay, try again' == dataReceived['time']){textSize=30.0;}
 
