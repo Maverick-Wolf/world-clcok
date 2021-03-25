@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     String bgImage = dataReceived['isDay'] ? 'day.jpg' : 'night.png';
     Color bgColor = dataReceived['isDay'] ? Colors.blue : Colors.indigo[700];
-    double textSize = 60.0;
+    double textSize = 70.0;
     if('The API is gay, try again' == dataReceived['time']){textSize=30.0;}
 
     return Scaffold(
@@ -43,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       'location': result['location'],
                       'url': result['url'],
                       'isDay': result['isDay'],
+                      'flag' : result['flag'],
                     };
                   });
                   },
@@ -62,6 +63,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    CircleAvatar(
+                      backgroundImage: AssetImage('assets/${dataReceived['flag']}'),
+                      radius: 20.0,
+                    ),
+                    SizedBox(width: 15.0,),
                     Text(dataReceived['location'],
                     style: TextStyle(
                       fontSize: 45.0,
