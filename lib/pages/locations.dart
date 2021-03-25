@@ -26,8 +26,10 @@ class _LocationScreenState extends State<LocationScreen> {
   void updateTime(index) async{
     WorldClock fullData = locations[index];
     WorldWeather fullData_2 = WorldWeather(location: locations[index].location);
+    Navigator.pushNamed(context, '/wait');
     await fullData.getTime();
     await fullData_2.getWeather();
+    Navigator.pop(context);
     Navigator.pop(context, {
       'location': fullData.location,
       'time': fullData.time,
