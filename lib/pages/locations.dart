@@ -15,6 +15,7 @@ class _LocationScreenState extends State<LocationScreen> {
     WorldClock(url: 'Africa/Cairo', location: 'Cairo', flag: 'egypt.png'),
     WorldClock(url: 'Africa/Nairobi', location: 'Nairobi', flag: 'kenya.png'),
     WorldClock(url: 'Europe/London', location: 'London', flag: 'uk.png'),
+    WorldClock(url: 'Asia/Tokyo', location: 'Tokyo', flag: 'japan.png'),
     WorldClock(url: 'Europe/Berlin', location: "Berlin", flag:'germany.png'),
     WorldClock(url: 'Europe/Athens', location: 'Athens', flag: 'greece.png'),
     WorldClock(url: 'Asia/Seoul', location: 'Seoul', flag: 'south_korea.png'),

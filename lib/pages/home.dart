@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(width: 20.0,),
+                    SizedBox(width: 30.0,),
                     CircleAvatar(
                       backgroundImage: AssetImage('assets/${dataReceived['flag']}'),
                       radius: 20.0,
