@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:world_clock/helpers/world_clock.dart';
+import 'package:world_clock/helpers/world_weather.dart';
+
 
 class LocationScreen extends StatefulWidget {
   @override
@@ -22,13 +24,16 @@ class _LocationScreenState extends State<LocationScreen> {
 
   void updateTime(index) async{
     WorldClock fullData = locations[index];
+    WorldWeather fullData_2 = WorldWeather(location: locations[index].location);
     await fullData.getTime();
+    await fullData_2.getWeather();
     Navigator.pop(context, {
       'location': fullData.location,
       'time': fullData.time,
       'url': fullData.url,
       'isDay': fullData.isDay,
       'flag': fullData.flag,
+      'temp': fullData_2.temp,
     });
   }
 

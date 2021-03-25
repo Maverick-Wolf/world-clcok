@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:world_clock/helpers/world_clock.dart';
+import 'package:world_clock/helpers/world_weather.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -10,7 +11,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   void setUp() async{
     WorldClock instance = WorldClock(location: "Berlin", url: 'Europe/Berlin', flag:'germany.png');
+    WorldWeather instance_2 = WorldWeather(location: "Berlin");
     await instance.getTime();
+    await instance_2.getWeather();
     await Future.delayed(Duration(seconds: 2), (){});
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       'location': instance.location,
@@ -18,6 +21,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       'url': instance.url,
       'isDay': instance.isDay,
       'flag': instance.flag,
+      'temp': instance_2.temp,
     });
   }
 

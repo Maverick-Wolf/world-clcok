@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(0.0, 150.0, 0.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(0.0, 130.0, 0.0, 0.0),
             child: Column(
               children: [
                 FlatButton.icon(
@@ -44,6 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       'url': result['url'],
                       'isDay': result['isDay'],
                       'flag' : result['flag'],
+                      'temp': result['temp'],
                     };
                   });
                   },
@@ -59,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   ),
                 ),
-                SizedBox(height: 50.0,),
+                SizedBox(height: 30.0,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -84,6 +85,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontWeight: FontWeight.bold,
                   letterSpacing: 2.0,
                   color: Colors.white70,
+                ),
+                ),
+                SizedBox(height: 10.0,),
+                Text('${dataReceived['temp']}°C',
+                style: TextStyle(
+                  fontSize: 45.0,
+                  letterSpacing: 2.0,
+                  color: Colors.white,
                 ),
                 ),
               ],
