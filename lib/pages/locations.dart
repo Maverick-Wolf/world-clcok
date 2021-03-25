@@ -13,10 +13,11 @@ class _LocationScreenState extends State<LocationScreen> {
     WorldClock(url: 'Africa/Cairo', location: 'Cairo', flag: 'egypt.png'),
     WorldClock(url: 'Africa/Nairobi', location: 'Nairobi', flag: 'kenya.png'),
     WorldClock(url: 'Europe/London', location: 'London', flag: 'uk.png'),
-    WorldClock(url: 'Asia/Kolkata', location: 'Mumbai', flag: 'india.png'),
+    WorldClock(url: 'Europe/Berlin', location: "Berlin", flag:'germany.png'),
+    WorldClock(url: 'Europe/Berlin', location: 'Athens', flag: 'greece.png'),
     WorldClock(url: 'Asia/Seoul', location: 'Seoul', flag: 'south_korea.png'),
     WorldClock(url: 'Asia/Jakarta', location: 'Jakarta', flag: 'indonesia.png'),
-    WorldClock(url: 'Europe/Berlin', location: 'Athens', flag: 'greece.png'),
+    WorldClock(url: 'Asia/Kolkata', location: 'Mumbai', flag: 'india.png'),
   ];
 
   void updateTime(index) async{

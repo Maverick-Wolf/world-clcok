@@ -17,6 +17,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       'time': instance.time,
       'url': instance.url,
       'isDay': instance.isDay,
+      'flag': instance.flag,
     });
   }
 
@@ -32,7 +33,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       backgroundColor: BlackColor,
       body: SafeArea(
         child: Center(
-          child: Image.network("https://i.pinimg.com/originals/04/00/f1/0400f1ae341070283f5441097ef96d39.gif"),
+          child: Image.asset('assets/loading.gif'),
         ),
       ),
     );
