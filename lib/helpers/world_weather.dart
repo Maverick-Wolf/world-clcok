@@ -14,7 +14,7 @@ class WorldWeather {
       temp = (data['main']['temp']).toString();
     }
     catch (error) {
-      temp = 'The API is gay, try again';
+      temp = 'issue with weather api, try again';
     }
   }
 }

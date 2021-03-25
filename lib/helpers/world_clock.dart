@@ -25,7 +25,7 @@ class WorldClock {
       time = DateFormat.jm().format(now);
     }
     catch (error) {
-      time = 'The API is gay, try again';
+      time = 'issue with time api, try again';
     }
   }
 }
