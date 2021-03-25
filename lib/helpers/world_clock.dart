@@ -20,7 +20,7 @@ class WorldClock {
       String minutes = data['utc_offset'].substring(4,6);
 
       now = now.add(Duration(hours: int.parse(hours), minutes: int.parse(minutes)));
-      isDay = now.hour > 6 && now.hour < 20 ? true : false;
+      isDay = now.hour > 6 && now.hour < 18 ? true : false;
 
       time = DateFormat.jm().format(now);
     }
