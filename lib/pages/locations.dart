@@ -9,7 +9,7 @@ class LocationScreen extends StatefulWidget {
 class _LocationScreenState extends State<LocationScreen> {
 
   List<WorldClock> locations = [
-    WorldClock(url: 'America/New_York', location: 'New York', flag: 'usa.png'),
+    WorldClock(url: 'Asia/Kolkata', location: 'Delhi', flag: 'india.png'),
     WorldClock(url: 'Africa/Cairo', location: 'Cairo', flag: 'egypt.png'),
     WorldClock(url: 'Africa/Nairobi', location: 'Nairobi', flag: 'kenya.png'),
     WorldClock(url: 'Europe/London', location: 'London', flag: 'uk.png'),

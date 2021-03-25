@@ -17,6 +17,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
     String bgImage = dataReceived['isDay'] ? 'day.jpg' : 'night.png';
     Color bgColor = dataReceived['isDay'] ? Colors.blue : Colors.indigo[700];
+    double textSize = 60.0;
+    if('The API is gay, try again' == dataReceived['time']){textSize=30.0;}
+
     return Scaffold(
       backgroundColor: bgColor,
       body: SafeArea(
@@ -71,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 SizedBox(height: 20.0,),
                 Text(dataReceived['time'],
                 style: TextStyle(
-                  fontSize: 60.0,
+                  fontSize: textSize,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 2.0,
                   color: Colors.white70,
