@@ -35,6 +35,10 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 FlatButton.icon(
+                  color: Colors.grey[350],
+                  colorBrightness: Brightness.light,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
                   onPressed: () async{
                   dynamic result = await Navigator.pushNamed(context, '/locations');
                   setState(() {
@@ -49,13 +53,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                   },
                   icon: Icon(Icons.edit_location,
-                    color: Colors.grey[350],
+                    color: Colors.black,
                     size: 25.0,
                   ),
                   label: Text("Edit Location",
                   style: TextStyle(
                     fontSize: 17.0,
-                    color: Colors.grey[350],
+                    color: Colors.black,
                     letterSpacing: 2.0,
                   ),
                   ),
