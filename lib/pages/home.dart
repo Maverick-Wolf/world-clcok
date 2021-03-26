@@ -16,12 +16,13 @@ class _HomeScreenState extends State<HomeScreen> {
     dataReceived = dataReceived.isEmpty? ModalRoute.of(context).settings.arguments : dataReceived;
 
     String bgImage = dataReceived['isDay'] ? 'day.jpg' : 'night.png';
-    Color bgColor = dataReceived['isDay'] ? Colors.black : Colors.black;
+    Color textColor = dataReceived['isDay'] ? Colors.green[100] : Colors.white;
+    double boxSize = dataReceived['isDay'] ? 30.0 : 0.0;
     double textSize = 70.0;
     if('issue with time api, try again' == dataReceived['time']){textSize=30.0;}
 
     return Scaffold(
-      backgroundColor: bgColor,
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(
@@ -68,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(width: 30.0,),
+                    SizedBox(width: boxSize,),
                     CircleAvatar(
                       backgroundImage: AssetImage('assets/${dataReceived['flag']}'),
                       radius: 20.0,
@@ -78,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                       fontSize: 45.0,
                       letterSpacing: 2.0,
-                      color: Colors.white,
+                      color: textColor,
                     ),
                     ),
                   ],
