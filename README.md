@@ -13,8 +13,8 @@
 
 ### A little more about the app
 `The main core structure of the app consists of 4 pages`
-+ Page 1 => This is the loading page that pops up as soon as you start the app, needed this page so that could use this as a buffer while i grab data from the api.
-+ Page 2 => This is home page which comes up after the loading is done, this is like the main page which shows the main info(the time,name and weather).
-+ Page 3 => This is the locations page which contains the list of of various major cities throughout the world whose time and weather you can see, the page has a list view so you can scroll down to see more countries.
-+ Page 4 => This is the wait page which acts as the buffer similar to the laoding page but this comes into play after you select location from the Page 3(locations page) so that you just dont keep sitting on the locations page thinking something broke lol.
++ Page 1 => `This is the loading page that pops up as soon as you start the app, needed this page so that could use this as a buffer while i grab data from the api.`
++ Page 2 => `This is home page which comes up after the loading is done, this is like the main page which shows the main info(the time,name and weather).`
++ Page 3 => `This is the locations page which contains the list of of various major cities throughout the world whose time and weather you can see, the page has a list view so you can scroll down to see more countries.`
++ Page 4 => `This is the wait page which acts as the buffer similar to the laoding page but this comes into play after you select location from the Page 3(locations page) so that you just don't keep sitting on the locations page thinking something broke lol.`
 
