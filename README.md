@@ -2,6 +2,9 @@
 
 `Well this not too fancy stuff and just a basic app(yeah does use database or something, still learning that) that does exactly what the name says it shows the time and and weather of various cities throughout the world, the aim of this app was to like have an app that does what it says without much complexity and a good UI/UX(hopefully i have achieved this)    **heres a little secret, the app background changes according to the time**.`
 
+## APK+Screenshots
++ The link for the apk file and the some screenshots of the app can be found here [Link](https://drive.google.com/drive/folders/1hLsH910utFAyXKvFFu1Bx8KID00DR6aQ?usp=sharing)
+
 ## API's USED
 `This app uses 2 api's currently, one for the time(this one works super slow sometimes) and the other one for the weather, and i know there are better api's out there and there are those which provide both time and weather with just one api call but all of them were paid sooo you know......(alr i will say it, i am broke)`
 + This is the time api i used  [The API](http://worldtimeapi.org/)
