@@ -17,7 +17,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
     String bgImage = dataReceived['isDay'] ? 'day.jpg' : 'night.png';
     Color textColor = dataReceived['isDay'] ? Colors.green[100] : Colors.white;
-    double boxSize = dataReceived['isDay'] ? 30.0 : 0.0;
     double textSize = 70.0;
     if('issue with time api, try again' == dataReceived['time']){textSize=30.0;}
 
@@ -69,7 +68,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(width: boxSize,),
                     CircleAvatar(
                       backgroundImage: AssetImage('assets/${dataReceived['flag']}'),
                       radius: 20.0,
